@@ -22,7 +22,7 @@ function Navbar(){
                 <div className='hidden md:block ml-48 mt-1 '>
                     {/* border-green-300 border-4 */}
                 <ul className='flex gap-10'>
-                    <li>Pricing</li>
+                    <a href='/src/Component/Home.jsx'>Pricing</a>
                     <li>Add-ons</li>
                     <li>FAQs</li>
                     <li>Company</li>
