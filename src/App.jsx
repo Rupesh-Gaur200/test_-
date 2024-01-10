@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    {/* <Home></Home> */}
+     <Home></Home> 
     </>
   )
 }
