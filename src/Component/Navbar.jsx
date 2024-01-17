@@ -34,9 +34,9 @@ function Navbar(){
 
 
                  {/* button div start here */}
-                <div className="   mr-14 w-28 h-12 bg-green-300 rounded">
+                <div className="   mr-14 w-28 h-12 bg-[#71EFA3] rounded">
                     {/* 'border-orange-300 border-4 */}
-                    <button className='font-mono mt-3 ml-3 '>Start Here</button>
+                    <button className='font-mono mt-3 ml-3 text-[#1e224f]'>Start Here</button>
                 </div>
                 {/* button div ends here */}
 

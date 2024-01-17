@@ -21,7 +21,7 @@ function Home (){
                          <div className=" flex flex-col items-center  gap-6">
                             {/* border-2 border-red-300 */}
 
-                            <h1 className="text-8xl font-bold  ">Get Sparkly new<br></br> Website-in 5 days</h1>
+                            <h1 className="text-8xl font-bold text-pretty text-[#1e224f]"> Get Sparkly new <br></br>     Website-in 5 days.</h1>
 
                             <h3 className="text-xl">
                                 we make it , you take it
@@ -32,9 +32,9 @@ function Home (){
 
                          {/* div item2 containing button start here */}
                             
-                        <div className=" ">
+                        <div className="rounded bg-[#71EFA3] h-14 w-28">
                         {/* border-2 border-red-600 */}
-                            <button>I' will take it </button>
+                            <button className="pl-4 pt-3 text-lg font-bold text-[#1e224f]">I'll take it </button>
                             
                             </div>    
                         {/* div item2 containing button ends here */}
