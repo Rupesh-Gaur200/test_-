@@ -1,4 +1,6 @@
 import logo from '/logo.png'
+
+
 function Navbar(){
     return(
     //    main div start here
@@ -39,6 +41,12 @@ function Navbar(){
                     <button className='font-mono mt-3 ml-3 text-[#1e224f]'>Start Here</button>
                 </div>
                 {/* button div ends here */}
+
+
+
+
+
+                       
 
             </div>
             {/* items div ends here */}

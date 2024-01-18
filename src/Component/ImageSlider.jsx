@@ -3,6 +3,8 @@
 function ImageSlider ({slides}){
     return(
         <div  className="border-4 border-red-400">
+          
+          
            { slides.map((t)=>{
 
 
