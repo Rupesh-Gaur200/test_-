@@ -10,7 +10,26 @@ import img5 from '/img5.webp'
 
 function Home (){
 
-    const slides=[img1,img2,img3,img4,img5]
+    const slides=[
+        {
+            url:"https://layerly.io/wp-content/uploads/2023/03/lvi-salon-studio-home.webp",
+            title:"Image1"
+        },
+        {
+            url:"/img2.webp",
+            title:"Image2"
+        },{
+            url:"/img3.webp",
+            title:"Image3"
+        },{
+            url:"/img4.webp",
+            title:"Image4"
+        },
+        {
+            url:"/img5.webp",
+            title:"Image5"
+        }
+    ]
 
 
     return (
