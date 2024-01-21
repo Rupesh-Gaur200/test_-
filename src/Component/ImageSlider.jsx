@@ -1,16 +1,40 @@
-
-
+import useEmblaCarousel from 'embla-carousel-react'
+import "./image.css"
+import { useCallback , useState } from 'react'
 function ImageSlider ({slides}){
+
+   const [emblaRef, emblaApi] = useEmblaCarousel()
+   const scrollPrev = useCallback(() => {
+      if (emblaApi) emblaApi.scrollPrev()
+    }, [emblaApi])
+  
+    const scrollNext = useCallback(() => {
+      if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
     return(
-        <div  className="border-4 border-red-400">
+      
           
+                   <div className="embla" ref={emblaRef}>
+                     <div className="embla__container">
           
-           { slides.map((t)=>{
+           { slides.map((t ,index)=>{
 
 
               return (
+
+               
                 
-                <img src={t}></img>
+              
+                       <div className="embla__slide">
+                        
+                        <img className='image' src={t.url}></img>
+                        <button className="embla__prev" onClick={scrollPrev}>Prev</button>
+                        <button className="embla__next" onClick={scrollNext}>Next</button>
+                       </div>
+                       
+                     
+
+                
               )
 
 
@@ -19,7 +43,9 @@ function ImageSlider ({slides}){
 
 
            }
-        </div>
+       </div>
+       </div>
+       
     )
 }
 
