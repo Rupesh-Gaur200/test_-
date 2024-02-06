@@ -1,9 +1,16 @@
 import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 import "./image.css"
 import { useCallback , useState } from 'react'
 function ImageSlider ({slides}){
 
-   const [emblaRef, emblaApi] = useEmblaCarousel()
+   const [emblaRef, emblaApi] = useEmblaCarousel({loop:true},[Autoplay(
+      {
+         delay:3000
+      }
+   )])
+
+
    const scrollPrev = useCallback(() => {
       if (emblaApi) emblaApi.scrollPrev()
     }, [emblaApi])
