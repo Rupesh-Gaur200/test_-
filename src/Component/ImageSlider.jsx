@@ -27,9 +27,9 @@ function ImageSlider ({slides}){
               
                        <div className="embla__slide">
                         
-                        <img className='image' src={t.url}></img>
-                        <button className="embla__prev" onClick={scrollPrev}>Prev</button>
-                        <button className="embla__next" onClick={scrollNext}>Next</button>
+                        <img className='img' src={t.url}></img>
+                        {/* <button className="embla__prev" onClick={scrollPrev}>Prev</button>
+                        <button className="embla__next" onClick={scrollNext}>Next</button> */}
                        </div>
                        
                      
